@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HOME SCREEN -->
+    <canvas id="canvas"></canvas>
+
+    <section class="Home" id="HOME">
+        <div class="container-home">
+            <div class="home-text">
+                <h1>Hello, I'm <span class="name">Mahir</span>, </h1>
+                <h1>Automation/ML Enthusiast.</h1>
+            </div>
+            <div class="down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#HOME" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">ABOUT ME</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <div class="container-fluid about" id="about">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <h1 class="about-text text-center">ABOUT ME</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 profile">
+                <img src="img/imageedit_1_8318479199-removebg-preview-resize.png" alt="profile-pic"
+                    class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col-md-8">
+                <div class="about-me-info">
+                    <p>Based in Houston, Texas. I am an Undergraduate Computer Science Student at
+                        <span class="TAMU">Texas A&M University</span> and student researcher for Aggienova.</p>
+                    <p>My main language of choice is Python <i class="fab fa-python fa-2x" style="color: #4ecca3;"></i>.
+                    </p>
+                    <p>Other Prominent Languages Used:</p>
+                    <ul>
+                        <li><span class="about-languages">C++</span></li>
+                        <li><span class="about-languages">Java</span></li>
+                        <li><span class="about-languages">HTML5</span></li>
+                        <li><span class="about-languages">CSS3</span></li>
+                        <li><span class="about-languages">Javascript</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid project">
+        <h1 class="project-text text-center" id="project">PROJECTS</h1>
+        <div class="row">
+            <div class="col-12 text-center myBtnContainer">
+                <button type="button" class="btn  btn-outline-secondary all my-active"
+                    onclick="filterSelection('all')">Show
+                    All</button>
+                <button type="button" class="btn  btn-outline-secondary python "
+                    onclick="filterSelection('python')">Python</button>
+                <button type="button" class="btn  btn-outline-secondary other" onclick="filterSelection('other')">Other
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <img src="img/sub-image.jpg" alt="substitute-image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">First Project</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+                            consectetur autem
+                            quam animi optio eligendi explicabo officiis officia cum at.</p>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-fluid contact">
+        <h1 class="contact-text text-center" id="contact">CONTACT</h1>
+        <div class="col-12 text-center">
+            <input type="text" placeholder="Name" class="contact-form">
+        </div>
+        <div class="col-12 text-center">
+            <input type="text" placeholder="Email" class="contact-form">
+        </div>
+        <div class="col-12 text-center">
+            <textarea name="message" id="message" cols="50" rows="5" placeholder="Message"
+                class="contact-form"></textarea>
+        </div>
+        <div class="col-12 text-center">
+            <input type="submit" class="contact-submit" value="SUBMIT">
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class=" text-center col-12 icons">
+                <a href="https://www.linkedin.com/in/mahir-p/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                <a href="https://github.com/megamp15" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+            </div>
+        </div>
+        <p>MAHIR PIRMOHAMMED &copy;2020</p>
+    </div>
+
+    <!-- Smooth Scroll by cferdinandi - https://github.com/cferdinandi/smooth-scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
