@@ -111,19 +111,23 @@
     <!-- Contact -->
     <div class="container-fluid contact">
         <h1 class="contact-text text-center" id="contact">CONTACT</h1>
-        <div class="col-12 text-center">
-            <input type="text" placeholder="Name" class="contact-form">
-        </div>
-        <div class="col-12 text-center">
-            <input type="text" placeholder="Email" class="contact-form">
-        </div>
-        <div class="col-12 text-center">
-            <textarea name="message" id="message" cols="50" rows="5" placeholder="Message"
-                class="contact-form"></textarea>
-        </div>
-        <div class="col-12 text-center">
-            <input type="submit" class="contact-submit" value="SUBMIT">
-        </div>
+        <form action="https://formspree.io/mqkyqvpw" method="POST">
+            <div class="col-12 text-center">
+                <input name="Name" type="text" placeholder="Name" class="contact-form">
+            </div>
+            <div class="col-12 text-center">
+                <input name="_replyto" type="text" placeholder="Email" class="contact-form">
+            </div>
+            <div class="col-12 text-center">
+                <textarea name="message" id="message" cols="50" rows="5" placeholder="Message"
+                    class="contact-form"></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <input type="submit" class="contact-submit" value="SUBMIT">
+            </div>
+            <input type="hidden" name="_subject" value="Thank You for your response!">
+            <!-- <input type=”hidden” name=”_next” value=”” /> -->
+        </form>
     </div>
 
 
