@@ -198,6 +198,38 @@ html {
     z-index: 0;
 }
 
+.my-email:hover {
+    color: #4ecca3;
+    cursor: none;
+}
+
+.contact-info{
+    color: #dfdfdf;
+    /* background-color: #252627; */
+    border: 3px solid #4ecca3;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    padding: 25px 0 0;
+}
+
+.icons a{
+    color: #dfdfdf;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    margin-right: 15px;
+}
+
+.fa-linkedin:hover, .fa-github-square:hover  {
+    color: #4ecca3;
+    cursor: pointer;
+}
 .contact-form{
     background-color: #272a2e;
     border: 3px solid #707070;
@@ -206,7 +238,7 @@ html {
     margin: 10px 0;
     padding: 10px;
     font-size: 20px;
-    width: 40%;
+    width: 80%;
 }
 
 .contact-submit {
@@ -228,6 +260,8 @@ input[type=text]:focus, textarea:focus {
     border: 3px solid #4ecca3;
 }
 
+
+
 /* Footer */
 .footer {
     background-color: #272a2e;
@@ -235,29 +269,13 @@ input[type=text]:focus, textarea:focus {
 }
 
 .footer p {
-    padding: 10px 0 25px;
+    padding: 25px 0 25px;
     margin: auto 0;
     text-align: center;
     color: #dfdfdf;
 }
 
-.icons{
-    padding: 25px 0 0;
-}
 
-.icons a{
-    color: #dfdfdf;
-    text-decoration: none;
-}
-
-.fa-linkedin {
-    margin-right: 15px;
-}
-
-.fa-linkedin:hover, .fa-github-square:hover  {
-    color: #4ecca3;
-    cursor: pointer;
-}
 /* Media Queries */
 @media (max-width: 1110px) {
     

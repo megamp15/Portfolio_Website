@@ -110,34 +110,44 @@
 
     <!-- Contact -->
     <div class="container-fluid contact">
-        <h1 class="contact-text text-center" id="contact">CONTACT</h1>
-        <form action="https://formspree.io/mqkyqvpw" method="POST">
-            <div class="col-12 text-center">
-                <input name="Name" type="text" placeholder="Name" class="contact-form">
+        <h1 class="col=12 contact-text text-center" id="contact">CONTACT</h1>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 contact-info">
+                <h3 class="my-email">Email: mpk19015@gmail.com</h3>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/mahir-p/" target="_blank"><i
+                            class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="https://github.com/megamp15" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+                </div>
             </div>
-            <div class="col-12 text-center">
-                <input name="_replyto" type="text" placeholder="Email" class="contact-form">
+            <div class="col-md-6 contact-form-info">
+                <form action="https://formspree.io/mqkyqvpw" method="POST">
+                    <div class="col-12 text-center">
+                        <input name="Name" type="text" placeholder="Name" class="contact-form">
+                    </div>
+                    <div class="col-12 text-center">
+                        <input name="_replyto" type="text" placeholder="Email" class="contact-form">
+                    </div>
+                    <div class="col-12 text-center">
+                        <textarea name="message" id="message" rows="5" placeholder="Message"
+                            class="contact-form"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <input type="submit" class="contact-submit" value="SUBMIT">
+                    </div>
+                    <input type="hidden" name="_subject" value="New Portfolio Website Contact Submission!">
+                    <!-- <input type=”hidden” name=”_next” value=”” /> -->
+                </form>
             </div>
-            <div class="col-12 text-center">
-                <textarea name="message" id="message" cols="50" rows="5" placeholder="Message"
-                    class="contact-form"></textarea>
-            </div>
-            <div class="col-12 text-center">
-                <input type="submit" class="contact-submit" value="SUBMIT">
-            </div>
-            <input type="hidden" name="_subject" value="Thank You for your response!">
-            <!-- <input type=”hidden” name=”_next” value=”” /> -->
-        </form>
+            <div class="col-md-1"></div>
+        </div>
+
+
     </div>
 
 
     <div class="container-fluid footer">
-        <div class="row">
-            <div class=" text-center col-12 icons">
-                <a href="https://www.linkedin.com/in/mahir-p/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-                <a href="https://github.com/megamp15" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
-            </div>
-        </div>
         <p>MAHIR PIRMOHAMMED &copy;2020</p>
     </div>
 
