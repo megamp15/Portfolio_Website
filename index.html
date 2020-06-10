@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <title>Mahir-P</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -23,7 +23,7 @@
                 <h1>Automation/ML Enthusiast.</h1>
             </div>
             <div class="down">
-                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+                <a href="#about" onclick="setTimeout(updateURL, 1)"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>
@@ -36,10 +36,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#HOME" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">ABOUT ME</a></li>
-                    <li class="nav-item"><a href="#project" class="nav-link">PROJECTS</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item"><a href="#HOME" class="nav-link" onclick="setTimeout(updateURL, 1000)">HOME</a>
+                    </li>
+                    <li class="nav-item"><a href="#about" class="nav-link" onclick="setTimeout(updateURL, 1000)">ABOUT
+                            ME</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link"
+                            onclick="setTimeout(updateURL, 1000)">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"
+                            onclick="setTimeout(updateURL, 1000)">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -137,13 +141,12 @@
                         <input type="submit" class="contact-submit" value="SUBMIT">
                     </div>
                     <input type="hidden" name="_subject" value="New Portfolio Website Contact Submission!">
-                    <!-- <input type=”hidden” name=”_next” value=”” /> -->
+                    <input type=”hidden” name=”_next”
+                        value=”https://megamp15.github.io/Portfolio_Website/thankyou.html” />
                 </form>
             </div>
             <div class="col-md-1"></div>
         </div>
-
-
     </div>
 
 
