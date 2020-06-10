@@ -23,10 +23,6 @@ function filterSelection(n) {
     }
 }
 
-function updateURL() {
-    history.replaceState('', '', '/');
-}
-
 // Particle JS Effect by Frank's Laboratory - https://www.youtube.com/watch?v=d620nV6bp0A&t=1026s
 // Edited to create background of homepage
 
