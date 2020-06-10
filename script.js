@@ -24,7 +24,7 @@ function filterSelection(n) {
 }
 
 function updateURL() {
-    window.history.replaceState('', '', 'Portfolio_Website/');
+    history.pushState('', '', '/Portfolio_Website')
 }
 
 // Particle JS Effect by Frank's Laboratory - https://www.youtube.com/watch?v=d620nV6bp0A&t=1026s
