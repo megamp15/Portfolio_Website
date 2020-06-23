@@ -320,6 +320,19 @@ overflow: hidden;
     cursor: pointer;
 }
 
+
+#error-message {
+    margin: 20px auto 10px;
+    padding: 10px;
+    color: #fe8b8e;
+    border-radius: 10px;
+    width: 77%;
+    text-align: center;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+
+
 /* Media Queries */
 @media (max-width: 1110px) {
     
@@ -397,6 +410,10 @@ overflow: hidden;
         font-size: 15px;
     }
 
+    #error-message {
+        font-size: 15px;
+        width: 66%;
+    }
     /* Thank You Page */
 
     .thanks-container {

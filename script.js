@@ -125,3 +125,34 @@ window.addEventListener('resize',
 
 init()
 animate()
+
+// FORM VALIDATION 
+function validation() {
+    let name = document.getElementById("Name").value;
+    let email = document.getElementById("Email").value;
+    let message = document.getElementById("message").value;
+    let error_message = document.getElementById("error-message");
+    let Message = ""
+
+    error_message.style.padding = "10px";
+    error_message.style.border = "3px solid #fe8b8e";
+
+    if (name == "" || name == " ") {
+        Message = "Please Enter a Valid Name"
+    }
+
+    else if (email.indexOf("@") == -1) {
+        Message = "Please Enter a Valid Email"
+    }
+
+    else if (message == "" || message == " ") {
+        Message = "Please Enter a Valid Message"
+    }
+
+    if (Message != "") {
+        error_message.innerHTML = Message
+        return false;
+    }
+
+    return true;
+}

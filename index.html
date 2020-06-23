@@ -81,7 +81,8 @@
     <!-- Projects -->
     <div class="container-fluid project">
         <h1 class="project-text text-center" id="project">PROJECTS</h1>
-        <div class="row">
+            <h2 class="project-text  text-center rotate">COMING SOON!!!</h2>
+        <!-- <div class="row">
             <div class="col-12 text-center myBtnContainer">
                 <button type="button" class="btn  btn-outline-secondary all my-active"
                     onclick="filterSelection('all')">Show
@@ -105,7 +106,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Contact -->
@@ -123,18 +124,19 @@
             </div>
             <div class="col-md-6 contact-form-info">
                 <form method="post" action="https://forms.un-static.com/forms/7d2de78f4451e528097f93752805b64d6bbfead3">
+                    <div id="error-message" class="col-12 text-center"></div>
                     <div class="col-12 text-center">
-                        <input name="Name" type="text" placeholder="Name" class="contact-form">
+                        <input id="Name" name="Name" type="text" placeholder="Name" class="contact-form">
                     </div>
                     <div class="col-12 text-center">
-                        <input name="_replyto" type="text" placeholder="Email" class="contact-form">
+                        <input  id="Email" name="_replyto" type="text" placeholder="Email" class="contact-form">
                     </div>
                     <div class="col-12 text-center">
                         <textarea name="message" id="message" rows="5" placeholder="Message"
                             class="contact-form"></textarea>
                     </div>
                     <div class="col-12 text-center">
-                        <input type="submit" class="contact-submit" value="SUBMIT" onclick="openThanks">
+                        <input type="submit" class="contact-submit" value="SUBMIT" onclick="return validation()">
                     </div>
                     <input type="hidden" name="_subject" value="New Portfolio Website Contact Submission!">
                 </form>
