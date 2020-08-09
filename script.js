@@ -157,7 +157,14 @@ function validation() {
     return true;
 }
 
-setTimeout(function () {
+setTimeout(() => {
     $(".loader-wrapper").fadeOut("slow");
-}, 1000)
+    document.querySelector('.main').style.opacity = 1;
+    document.querySelector('.main').style.display = 'block';
+}, 1)
 
+// Sticky Navigation Bar
+window.addEventListener("scroll", function () {
+    let nav = document.querySelector("nav");
+    nav.classList.toggle("sticky", window.scrollY > 800)
+})

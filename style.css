@@ -31,8 +31,8 @@ html {
   }
 
 .main {
-    /* opacity: 0;
-    display: none; */
+    opacity: 0;
+    display: none;
     transition: opacity 2s ease-in;
 }
   
@@ -40,8 +40,8 @@ html {
 /* Animated Background styles by Frank's Laboratory. See more in script.js */
 #canvas {
     position: absolute;
+    min-height: 106vh;
     top: 0; left: 0;
-    min-height: 108vh;
     width: 100%;
     background-color: #232931;
     z-index: -1;
@@ -110,9 +110,18 @@ html {
     color: #dfdfdf;
 }
 .nav-link:hover{
-    color: #4ecca3;
+    animation: nav-hover .75s;
+    animation-fill-mode: forwards;
 }
 
+.sticky{
+    background-color: #3b3f46;
+}
+
+@keyframes nav-hover{
+    0%{color: #dfdfdf;}
+    100%{color: #4ecca3;}
+}
 /* About Me */
 .about{
     min-height:100vh;
@@ -130,7 +139,7 @@ html {
     margin: 100px auto 0px;
     text-align: left;
     font-size: 6rem;
-    color:#373a3f;
+    color:#3b3f46;
     position: relative;
 }
 
@@ -163,7 +172,7 @@ html {
 .about-me-info ul {
     padding: 0 3vw;
 }
-.about-me-info ul li {
+.about-me-color, .about-me-info ul li {
     color: #4ecca3;
 }
 
@@ -188,7 +197,7 @@ html {
 .project-text {
     text-align: center;
     font-size: 6rem;
-    color:#373a3f;
+    color:#3b3f46;
     position: relative;
 }
 
@@ -282,7 +291,7 @@ html {
     padding-top: 10px;
     text-align: center;
     font-size: 6rem;
-    color:#373a3f;
+    color:#3b3f46;
     position: relative;
     z-index: 0;
 }
