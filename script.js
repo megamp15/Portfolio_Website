@@ -156,3 +156,8 @@ function validation() {
 
     return true;
 }
+
+setTimeout(function () {
+    $(".loader-wrapper").fadeOut("slow");
+}, 1000)
+

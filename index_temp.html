@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahir-P</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HOME SCREEN -->
+    <canvas id="canvas"></canvas>
+
+    <section class="Home" id="HOME">
+        <div class="container-home">
+            <div class="home-text">
+                <h4>Hello, my name is</h4>
+                <h1 class = "name">Mahir P.</h1>
+                <h2 class = "job">Automation / Machine Learning Enthusiast.</h2>
+            </div>
+            <div class="down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#HOME" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <div class="container-fluid about" id="about">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <h1 class="about-text text-center">ABOUT ME</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 profile">
+                <img src="./img/imageedit_1_8318479199-removebg-preview-resize.png" alt="profile-pic"
+                    class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col-md-8">
+                <div class="about-me-info">
+                    <p>Based in Houston, Texas. I am an Undergraduate Computer Science Student at
+                        <span class="TAMU">Texas A&M University</span> and student researcher for Aggienova.</p>
+                    <p>My main language of choice is Python <i class="fab fa-python fa-2x" style="color: #4ecca3;"></i>.
+                    </p>
+                    <p>Other Prominent Languages Used:</p>
+                    <ul>
+                        <li><span class="about-languages">C++</span></li>
+                        <li><span class="about-languages">Java</span></li>
+                        <li><span class="about-languages">HTML5</span></li>
+                        <li><span class="about-languages">CSS3</span></li>
+                        <li><span class="about-languages">Javascript</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid project">
+        <h1 class="project-text text-center" id="project">PROJECTS</h1>
+        <!-- <h2 class="project-text  text-center rotate">COMING SOON!!!</h2> -->
+        <div class="row">
+            <div class="col-12 text-center myBtnContainer">
+                <button type="button" class="btn  btn-outline-secondary all my-active"
+                    onclick="filterSelection('all')">Show
+                    All</button>
+                <button type="button" class="btn  btn-outline-secondary python "
+                    onclick="filterSelection('python')">Python</button>
+                <button type="button" class="btn  btn-outline-secondary other" onclick="filterSelection('other')">Other
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Lottery Information Downloader</h5>
+                        <p class="card-text">This script automates the retrieval of lottery data from the Texas Retailer
+                            Lottery Website using Selenium and Python.</p>
+                        <a href="https://github.com/megamp15/LotteryInformationDownloader">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj other">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Aggienova Research Website</h5>
+                        <p class="card-text">Created research website for Aggienova hosted using Github Pages.
+                        </p>
+                        <a href="https://megamp15.github.io/Aggienova_Website/">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Aggienova SED (Spectral Energy Distribution) Maker</h5>
+                        <p class="card-text">Creating spectral energy distributions (SED) from astronomical spectra data
+                            using Python and its various libraries.</p>
+                        <a href="https://github.com/pbrown801/SEDmaker/tree/Mahir">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Aggienova Light Curve Animation</h5>
+                        <p class="card-text">Animated plot of light curves through data manipulation using the
+                            matplotlib library for statistical visualization. The final code downloads, interprets, and
+                            outputs plots for research and presentation purposes. </p>
+                        <a
+                            href="https://github.com/pbrown801/aggienova-templates/blob/master/python/Graphing_animation.py">View
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Discord Bot</h5>
+                        <p class="card-text">Utilized python and the discord library to create an automated driver for
+                            three distinct games that would enable members of a discord server to initiate and play the
+                            game with others.</p>
+                        <a href="https://github.com/rynbhuiya/DiscordBotContest">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Aggienova Colored Image gif </h5>
+                        <p class="card-text">Developed a program to automate the retrieval of supernovae fits files from
+                            an archive for the creation of a colored supernovae gif (short movie) that displays the
+                            supernovae in the image change over time while synced to the animation plot of the light
+                            curve over the same time.</p>
+                        <a
+                            href="https://github.com/pbrown801/aggienova-templates/blob/master/images/manipulate_nova_data.py">View
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Cache Simulator</h5>
+                        <p class="card-text">This program simulates a cache with various replacement/hit policies and
+                            other functions in a high-level language, Python.</p>
+                        <a href="https://github.com/megamp15/Cache-Simulator">View
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Aggienova Smoothing Script</h5>
+                        <p class="card-text">Created a smoothing script for image files to improve image quality. </p>
+                        <a href="https://github.com/megamp15/Aggienova_Spring2019">View
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj python">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Pong - Final Project</h5>
+                        <p class="card-text">Created a pong game using python practices learned in Engineering Lab 1, Fall 2018. </p>
+                        <a href="https://github.com/megamp15/ENGR_102-Pong">View
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 proj other">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Groups Creator - Final Project</h5>
+                        <p class="card-text">Creates pairs of students based on responses from a survey using Java learned in Programming Languages, Spring 2020. </p>
+                        <a href="https://github.com/megamp15/ENGR_102-Pong">View
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Contact -->
+    <div class="container-fluid contact">
+        <h1 class="col=12 contact-text text-center" id="contact">CONTACT</h1>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 contact-info">
+                <h3 class="my-email">Email: mahirpirmohammed@gmail.com</h3>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/mahir-p/" target="_blank"><i
+                            class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="https://github.com/megamp15" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 contact-form-info">
+                <form method="post" action="https://forms.un-static.com/forms/7d2de78f4451e528097f93752805b64d6bbfead3">
+                    <div id="error-message" class="col-12 text-center"></div>
+                    <div class="col-12 text-center">
+                        <input id="Name" name="Name" type="text" placeholder="Name" class="contact-form">
+                    </div>
+                    <div class="col-12 text-center">
+                        <input  id="Email" name="_replyto" type="text" placeholder="Email" class="contact-form">
+                    </div>
+                    <div class="col-12 text-center">
+                        <textarea name="message" id="message" rows="5" placeholder="Message"
+                            class="contact-form"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <input type="submit" class="contact-submit" value="SUBMIT" onclick="return validation()">
+                    </div>
+                    <input type="hidden" name="_subject" value="New Portfolio Website Contact Submission!">
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer">
+        <p>MAHIR PIRMOHAMMED &copy;2020</p>
+    </div>
+
+    <!-- Smooth Scroll by cferdinandi - https://github.com/cferdinandi/smooth-scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

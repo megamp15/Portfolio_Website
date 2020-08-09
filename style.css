@@ -29,12 +29,19 @@ html {
     border-radius: 6px;
     border: 3px solid var(--scrollbarBG);
   }
+
+.main {
+    /* opacity: 0;
+    display: none; */
+    transition: opacity 2s ease-in;
+}
+  
 /* Home Screen */
 /* Animated Background styles by Frank's Laboratory. See more in script.js */
 #canvas {
     position: absolute;
     top: 0; left: 0;
-    min-height: 100vh;
+    min-height: 108vh;
     width: 100%;
     background-color: #232931;
     z-index: -1;
@@ -49,21 +56,31 @@ html {
 }
 
 .container-home{
-    box-shadow: inset 0 0 5000px rgba(0,0,0,.6);
-    border-radius: 2rem;
+    width: 50%;
     font-size: 3rem;
-    padding: 3rem 3rem 0;
     color: #dfdfdf;
+    height: 100%;
+    padding-left:0px;
+    padding-top: 300px;
+}
+
+.home-text{
+    display: grid;
+    text-align: left;
 }
 
 .container-home h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 4rem;
 }
 
 .name {
     font-family: 'Orbitron', sans-serif;
     color: #4ecca3;
+    font-size: 6rem;
+}
+
+.job {
+    font-size: 3rem;
 }
 
 .down{
@@ -71,31 +88,61 @@ html {
 }
 
 .fa-chevron-down{
-    color: #dfdfdf !important;
+    /* color: #dfdfdf !important; */
+    animation: fill 10s infinite;
 }
 
 .fa-chevron-down:hover {
     color: #4ecca3 !important;
 }
 
+@keyframes fill{
+    0%{color: #dfdfdf;}
+    25%{color: #4ecca3;}
+    50%{color: #dfdfdf;}
+    75%{color: #4ecca3;}
+    100%{color: #dfdfdf;}
+}
+
 /* Navigation */
 .nav-link {
     font-size: 1.0em !important;
+    color: #dfdfdf;
+}
+.nav-link:hover{
+    color: #4ecca3;
 }
 
 /* About Me */
 .about{
     min-height:100vh;
     color: #dfdfdf;
-    background-color: #272a2e;
+    background-color: #232931;
+}
 
+.about-column{
+    padding-top: 100px;
+    margin: auto;
+    width: 50%;
 }
 
 .about-text{
-    padding-top: 8vh;
-    font-size: 10vw;
-    color: #373a3f;
-    text-shadow: 2px 0 0 #4ecca3, -2px 0 0 #4ecca3, 0 2px 0 #4ecca3, 0 -2px 0 #4ecca3, 1px 1px #4ecca3, -1px -1px 0 #4ecca3, 1px -1px 0 #4ecca3, -1px 1px 0 #4ecca3;
+    margin: 100px auto 0px;
+    text-align: left;
+    font-size: 6rem;
+    color:#373a3f;
+    position: relative;
+}
+
+.about-text:after{
+    content:"";
+    display:block;
+    width: 250px;
+    height:4px;
+    background: #4ecca3;
+    position: absolute;
+    right: 200px;
+    top:50%;
 }
 
 .about-languages {
@@ -107,15 +154,11 @@ html {
 }
 
 .about-me-info {
-    max-width: 75vw;
-    background-color: #252627;
-    border: 5px solid #4ecca3;
-    border-radius: 3rem;
-    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 1);
-    padding:5vh 2vw 1vh;
+    padding-top: 100px;
+    background-color: #232931;
     margin: 0 auto;
     z-index: 1;
-    font-size: 1.5vw;
+    font-size: 1.25rem;
 }
 .about-me-info ul {
     padding: 0 3vw;
@@ -137,27 +180,72 @@ html {
 
 /* Portfolio Projects */
 .project {
-    background-color: #272a2e;
+    background-color: #232931;
     min-height: 100vh;
     color: #dfdfdf;
 }
 
 .project-text {
-    padding-top: 8vh;
-    font-size: 10vw;
-    color: #373a3f;
-    text-shadow: 2px 0 0 #4ecca3, -2px 0 0 #4ecca3, 0 2px 0 #4ecca3, 0 -2px 0 #4ecca3, 1px 1px #4ecca3, -1px -1px 0 #4ecca3, 1px -1px 0 #4ecca3, -1px 1px 0 #4ecca3;
-    z-index: 0;
+    text-align: center;
+    font-size: 6rem;
+    color:#373a3f;
+    position: relative;
+}
+
+.project-text:before {
+    content:"";
+    display:block;
+    width: 250px;
+    height:4px;
+    background: #4ecca3;
+    position: absolute;
+    left: 400px;
+    top:50%;
+}
+
+.project-text:after {
+    content:"";
+    display:block;
+    width: 250px;
+    height:4px;
+    background: #4ecca3;
+    position: absolute;
+    right: 400px;
+    top:50%;
 }
 
 .card {
-    margin: 10px;
-    background-color: #252627 ;
+    margin: 10px auto;
+    height: 400px;
+    width: 400px;
+    background-color: #29313b;
+    transition: top ease 0.5s;
 }
+
+.link {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.card h5{
+    color: #4ecca3;
+    font-size: 1.5rem;
+}
+
+.card-languages{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    color: #54585f;
+}
+
 .card-body a {
+    display: grid;
+    margin-bottom: 0px;
+    margin-top: auto;
     color: #4ecca3;
     text-decoration: none;
-    margin-top: auto;
     font-weight: 300;
 }
 .card-body a:hover {
@@ -186,18 +274,40 @@ html {
 
 /* Contact */
 .contact {
-    background-color: #272a2e;
+    background-color: #232931;
     min-height: 100vh;
 }
 
 .contact-text {
-    padding-top: 8vh;
-    font-size: 10vw;
-    color: #373a3f;
-    text-shadow: 2px 0 0 #4ecca3, -2px 0 0 #4ecca3, 0 2px 0 #4ecca3, 0 -2px 0 #4ecca3, 1px 1px #4ecca3, -1px -1px 0 #4ecca3, 1px -1px 0 #4ecca3, -1px 1px 0 #4ecca3;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 6rem;
+    color:#373a3f;
+    position: relative;
     z-index: 0;
 }
 
+.contact-text:before {
+    content:"";
+    display:block;
+    width: 250px;
+    height:4px;
+    background: #4ecca3;
+    position: absolute;
+    left: 400px;
+    top:50%;
+}
+
+.contact-text:after {
+    content:"";
+    display:block;
+    width: 250px;
+    height:4px;
+    background: #4ecca3;
+    position: absolute;
+    right: 400px;
+    top:50%;
+}
 .my-email:hover {
     color: #4ecca3;
     cursor: none;
@@ -231,7 +341,7 @@ html {
     cursor: pointer;
 }
 .contact-form{
-    background-color: #272a2e;
+    background-color: #232931;
     border: 3px solid #707070;
     color: #dfdfdf;
     border-radius: 10px;
@@ -242,7 +352,7 @@ html {
 }
 
 .contact-submit {
-    background-color: #272a2e;
+    background-color: #232931;
     border: 3px solid #707070;
     color: #4ecca3;
     border-radius: 10px;
@@ -264,7 +374,7 @@ input[type=text]:focus, textarea:focus {
 
 /* Footer */
 .footer {
-    background-color: #272a2e;
+    background-color: #232931;
     border-top: 3px solid #4ecca3;
 }
 
@@ -305,7 +415,7 @@ overflow: hidden;
 }
 
 .return-btn {
-    background-color: #272a2e;
+    background-color: #232931;
     border: 3px solid #707070;
     color: #dfdfdf;
     border-radius: 10px;
@@ -495,5 +605,3 @@ overflow: hidden;
         font-size: 15px;
     }
 }
-
-
