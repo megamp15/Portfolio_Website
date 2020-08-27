@@ -49,14 +49,13 @@ html {
 
 .Home {
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     display: grid;
     place-items: center;
     text-align: center;
 }
 
 .container-home{
-    width: 50%;
     font-size: 3rem;
     color: #dfdfdf;
     height: 100%;
@@ -130,28 +129,27 @@ html {
 }
 
 .about-column{
-    padding-top: 100px;
+    padding-top: 30px;
     margin: auto;
-    width: 50%;
+    width: 80%;
 }
 
 .about-text{
     margin: 100px auto 0px;
-    text-align: left;
+    text-align: center;
     font-size: 6rem;
     color:#3b3f46;
     position: relative;
 }
 
-.about-text:after{
-    content:"";
-    display:block;
-    width: 250px;
-    height:4px;
-    background: #4ecca3;
-    position: absolute;
-    right: 200px;
-    top:50%;
+.about-text:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.about-text:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 .about-languages {
@@ -163,7 +161,6 @@ html {
 }
 
 .about-me-info {
-    padding-top: 100px;
     background-color: #232931;
     margin: 0 auto;
     z-index: 1;
@@ -195,32 +192,37 @@ html {
 }
 
 .project-text {
+    padding-top: 70px;
     text-align: center;
     font-size: 6rem;
     color:#3b3f46;
     position: relative;
 }
-
-.project-text:before {
-    content:"";
-    display:block;
-    width: 250px;
-    height:4px;
-    background: #4ecca3;
-    position: absolute;
-    left: 400px;
-    top:50%;
-}
-
+/* 
+.project-text:before,
 .project-text:after {
-    content:"";
-    display:block;
-    width: 250px;
-    height:4px;
-    background: #4ecca3;
-    position: absolute;
-    right: 400px;
-    top:50%;
+  background-color: #4ecca3;
+  content: "";
+  display: inline-block;
+  height: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 500px;
+} */
+
+/* .project-text:before {
+  right: 0.5em;
+  margin-left: -50%;
+} */
+
+/* .project-text:after {
+  left: 0.5em;
+  margin-right: -50%;
+} */
+
+.card-holder{
+    margin: auto;
+    width: 1280px;
 }
 
 .card {
@@ -228,7 +230,6 @@ html {
     height: 400px;
     width: 400px;
     background-color: #29313b;
-    transition: top ease 0.5s;
 }
 
 .link {
@@ -244,24 +245,19 @@ html {
 
 .card-languages{
     position: absolute;
-    bottom: 0;
+    bottom: 0 ;
     left: 10;
     color: #54585f;
 }
 
 .card-body a {
-    display: grid;
-    margin-bottom: 0px;
-    margin-top: auto;
-    color: #4ecca3;
-    text-decoration: none;
-    font-weight: 300;
+   color: #54585f;
 }
+
 .card-body a:hover {
-    border-radius: 5rem;
-    padding: 5px 10px;
-    border: 1px solid #4ecca3;
+    color: #4ecca3;
 }
+
 .myBtnContainer{
     margin-bottom: 10px;
 }
@@ -285,10 +281,11 @@ html {
 .contact {
     background-color: #232931;
     min-height: 100vh;
+    padding-top: 25px;
 }
 
 .contact-text {
-    padding-top: 10px;
+    padding-top: 50px;
     text-align: center;
     font-size: 6rem;
     color:#3b3f46;
@@ -296,42 +293,43 @@ html {
     z-index: 0;
 }
 
-.contact-text:before {
-    content:"";
-    display:block;
-    width: 250px;
-    height:4px;
-    background: #4ecca3;
-    position: absolute;
-    left: 400px;
-    top:50%;
+/* .contact-text:before,
+.contact-text:after {
+    background-color: #4ecca3;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 400px;
+} */
+
+.contact-text:before{
+    right: 0.5em;
+    margin-left: -50%;
 }
 
-.contact-text:after {
-    content:"";
-    display:block;
-    width: 250px;
-    height:4px;
-    background: #4ecca3;
-    position: absolute;
-    right: 400px;
-    top:50%;
+.contact-text:after{
+    left: 0.5em;
+    margin-right: -50%;
 }
-.my-email:hover {
-    color: #4ecca3;
-    cursor: none;
+
+
+.my-email {
+    font-size: 20px;
 }
 
 .contact-info{
-    color: #dfdfdf;
+    color: #4ecca3;
     /* background-color: #252627; */
-    border: 3px solid #4ecca3;
+    /* border: 3px solid #4ecca3; */
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .icons{
     padding: 25px 0 0;
 }
@@ -397,7 +395,7 @@ input[type=text]:focus, textarea:focus {
 /* Thank You Page */
 
 .thankyou-body {
-overflow: hidden;
+    overflow: hidden;
 }
 
 .thanks-container {
@@ -452,21 +450,241 @@ overflow: hidden;
 }
 
 
-/* Media Queries */
+/*  Media Queries
+    Media Queries
+    Media Queries
+    Media Queries
+    Media Queries 
+    Media Queries
+    Media Queries
+    Media Queries
+    Media Queries
+    Media Queries
+    Media Queries
+    Media Queries
+    Media Queries   */
+
+@media (max-width: 1290px){
+    
+    .card-holder{
+        width:800px;
+    }
+
+    .card {
+        width:250px;
+        height:250px;
+    }
+
+    .card-title {
+        width: 85%;
+    }
+
+    .card h5{
+        font-size: 1.1rem;
+    }
+
+    .card p{
+        font-size:.76rem;
+    }
+
+}
+
 @media (max-width: 1110px) {
     
     /*HOME */
 
+    .home-text{
+        width: 800px;
+        height: auto;
+    }
+
+
+    .name {
+        font-size: 4.5rem;
+    }
+
+    .job{
+        width: 100%;
+        font-size: 2rem
+    }
+
+    /* ABOUT */
+
+    .about-text{
+        font-size:5rem ;
+    }
+
+    .about-me-info {
+        font-size: 1rem;
+    }
+
+    /* PROJECTS */
+
+    .project-text {
+        font-size: 5rem;
+    }
+
+    .card-holder{
+        margin-right: 100px;
+        width: 800px;
+    }
+
+    .card {
+        height: 250px;
+        width: 250px;
+    }   
+
+    .card-title {
+        width: 85%;
+    }
+
+    .card h5{
+        font-size: 1.1rem;
+    }
+
+    .card p{
+        font-size:.76rem;
+    }
+
+    /* CONTACT */
+
+    .contact-text{
+        font-size: 5rem;
+    }
+
+    .my-email{
+        font-size: 1.25rem;
+    }
+    
+
+
+
+    /* Thank You Page */
+
+    .thanks-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    .return-btn {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 850px){
+    .project-text:before,
+    .project-text:after {
+        width: 0px;
+    }
+
+    .about-text:before,
+    .about-text:after {
+        width: 0px;
+    }
+
+    .contact-text:before,
+    .contact-text:after {
+        width: 0px;
+    }
+
+    .card-holder{
+        margin-right: 600px;
+    }
+
+    .card{
+        width: 225px;
+        height: 225px;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    /* CONTACT */
+
+
+    .my-email{
+        font-size: 1.15rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    /*HOME */
+
     .container-home{
-        margin-left: 50px;
-        margin-right: 50px;
+        width:100%;
+    }
+
+    .home-text{
+        padding-left: 100px;
+        width: 100%;
+        height: auto;
     }
 
 
-    .contact-info h3{
-        font-size: 24px;
-        text-align: center;
+    .name {
+        font-size: 4.5rem;
     }
+
+    .job{
+        width: 100%;
+        font-size: 2rem
+    }
+
+    /* ABOUT */
+
+    .about-text{
+        font-size:5rem ;
+    }
+
+    .about-me-info {
+        font-size: 1rem;
+    }
+
+    .image{
+        width:400px;
+    }
+
+    /* PROJECTS */
+
+    .project-text {
+        font-size: 5rem;
+    }
+
+    .card-holder {
+        width: 500px;
+        margin-left: 100px;
+    }
+
+    .card {
+        height: 225px;
+        width: 225px;
+    }   
+
+    .card-title {
+        width: 85%;
+    }
+
+    .card h5{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    /* CONTACT */
+    
+    .my-email{
+        font-size: 1rem;
+    }
+
 
 
     /* Thank You Page */
@@ -484,119 +702,85 @@ overflow: hidden;
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
 
+     /*HOME */
 
-    /* HOME */
-
-    .container-home{
-        margin: auto;
+    .home-text{
+        text-align: center;
+        padding:0px;
     }
 
-    .container-home h1 {
-        font-size: 2.5rem;
-        margin: auto;
+    .home-text h4{
+        font-size: 1rem;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .job{
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: pre;
+        font-size: 1.25rem
     }
 
     /* ABOUT */
 
-    .about-me-info p , ul{
-        font-size: 18px;
+    .about-text{
+        margin-top: 10px;
+        font-size:3.5rem ;
+    }
+
+    .about-me-info {
+        padding-top: 20px;
+        font-size: 1rem;
+    }
+
+    .image{
+        width:400px;
+    }
+
+    /* PROJECTS */
+
+    .project-text {
+        font-size: 3.5rem;
+    }
+
+    .card-holder{
+        width: 100px;
+        position: relative;
+        right:35px;
+    }
+
+    .card {
+        height: 325px;
+        width: 325px;
+    }   
+
+    .card-title {
+        width: 85%;
+    }
+
+    .card h5{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 14px;
     }
 
     /* CONTACT */
-
-    .contact-info {
-        width: 60%;
-        margin: auto;
+    .contact-text{
+        font-size: 3.5rem;
     }
 
-    .contact-info h3{
-        font-size: 24px;
-        text-align: center;
+    .my-email{
+        font-size: 1.45rem;
     }
 
-    .contact-form {
-        width: 70%;
-        font-size: 12px;
-    }
-    
-    #message {
-        height: 300px;
-    }
 
-    .contact-submit {
-        font-size: 15px;
-    }
-
-    #error-message {
-        font-size: 15px;
-        width: 66%;
-    }
-    /* Thank You Page */
-
-    .thanks-container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        font-size: 1.25rem;
-    }
-
-    .return-btn {
-        font-size: 19px;
-    }
-}
-
-
-@media (max-width: 576px) {
-
-    /* MOBILE-HOME */
-
-    .container-home{
-        font-size: 3rem;
-        padding: 2rem 0em 1rem;
-        margin: 10px 50px 5px;
-    }
-    
-    .container-home h1 {
-        font-size: 2rem;
-        margin: auto;
-    }
-
-    .down {
-        font-size: 2rem;
-    }
-
-    /* MOBILE-ABOUT */
-
-    .about-me-info p , ul{
-        font-size: 16px;
-        margin: auto 1rem;
-    }
-
-    /* MOBILE-CONTACT */
-
-    .contact-info {
-        width: 60%;
-        margin: auto;
-    }
-
-    .contact-info h3{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .contact-form {
-        width:70%;
-    }
-
-    #message {
-        height: 300px;
-    }
-    
-    .footer p {
-        font-size: 13px;
-    }
 
     /*Mobile-Thank You Page*/
     .thanks-container {
@@ -612,5 +796,31 @@ overflow: hidden;
     }
     .return-btn {
         font-size: 15px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .card-holder{
+        width: 75px;
+        position: relative;
+        right: 67px;
+    }
+
+    .card {
+        height: 250px;
+        width:  250px;
+    }   
+
+    .card-title {
+        width: 85%;
+    }
+
+    .card h5{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 12px;
     }
 }

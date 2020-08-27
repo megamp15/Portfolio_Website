@@ -23,7 +23,7 @@
 
 
         <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-expand-md fixed-top">
+        <nav class="navbar navbar-custom navbar-expand-md sticky-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -67,10 +67,11 @@
                 <div class="row">
                     <div class="col-md-4 profile">
                         <div class="about-me-info">
-                            <p>Based in Houston, Texas. I am an Undergraduate Computer Science Student at
-                                <span class="TAMU">Texas A&M University</span> and student researcher for Aggienova.</p>
-                            <p>My main language of choice is Python <i class="fab fa-python fa-2x"
-                                    style="color: #4ecca3;"></i>.
+                            <p>I'm a <span class="about-me-color">software engineer </span> and junior computer science
+                                student at <span class="about-me-color"> Texas A&M University</span>.</p>
+                            <p> I enjoy creating small automation programs that make tedious tasks easier and I am
+                                currently learning ML for future prediction applications.</p>
+                            <p>My main language of choice is Python <i class="fab fa-python fa-2x about-me-color"></i>.
                             </p>
                             <p>Other Prominent Languages Used:</p>
                             <ul>
@@ -84,7 +85,7 @@
                     </div>
                     <div class="col-md-8">
                         <img src="./img/imageedit_1_8318479199-removebg-preview-resize.png" alt="profile-pic"
-                            class="img-fluid mx-auto d-block">
+                            class="image img-fluid mx-auto d-block">
                     </div>
                 </div>
             </div>
@@ -96,8 +97,7 @@
             <div class="row">
                 <div class="col-12 text-center myBtnContainer">
                     <button type="button" class="btn  btn-outline-secondary all my-active"
-                        onclick="filterSelection('all')">Show
-                        All</button>
+                        onclick="filterSelection('all')">Show All</button>
                     <button type="button" class="btn  btn-outline-secondary python "
                         onclick="filterSelection('python')">Python</button>
                     <button type="button" class="btn  btn-outline-secondary other"
@@ -105,138 +105,106 @@
                     </button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 proj python">
+            <div class="card-holder row">
+                <div class="col-sm-6 col-md-4 proj python">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Lottery Information Downloader</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">This script automates the retrieval of lottery data from the Texas
-                                Retailer
-                                Lottery Website using Selenium and Python.</p>
-                            <a href="https://github.com/megamp15/LotteryInformationDownloader">View More</a>
+                            <a href="https://github.com/megamp15/LotteryInformationDownloader"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">This script automates the retrieval of lottery data from the Texas Retailer Lottery Website using Selenium and Python.</p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj other">
+                <div class="col-sm-6 col-md-4 proj other">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Aggienova Research Website</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">Created research website for Aggienova hosted using Github Pages.
-                            </p>
-                            <a href="https://megamp15.github.io/Aggienova_Website/">View More</a>
+                            <a href="https://megamp15.github.io/Aggienova_Website/"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">Created research website for Aggienova hosted using Github Pages.</p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj python">
+                <div class="col-sm-6 col-md-4 proj python">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Aggienova SED (Spectral Energy Distribution) Maker</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">Creating spectral energy distributions (SED) from astronomical spectra
-                                data
-                                using Python and its various libraries.</p>
-                            <a href="https://github.com/pbrown801/SEDmaker/tree/Mahir">View More</a>
+                            <a href="https://github.com/pbrown801/SEDmaker/tree/Mahir"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">Creating spectral energy distributions (SED) from astronomical spectra data using Python and its various libraries.</p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj python">
+                <div class="col-sm-6 col-md-4 proj python">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Aggienova Light Curve Animation</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">Animated plot of light curves through data manipulation using the
-                                matplotlib library for statistical visualization. The final code downloads, interprets,
-                                and
-                                outputs plots for research and presentation purposes. </p>
-                            <a
-                                href="https://github.com/pbrown801/aggienova-templates/blob/master/python/Graphing_animation.py">View
-                                More</a>
+                            <a href="https://github.com/pbrown801/aggienova-templates/blob/master/python/Graphing_animation.py"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">Animated plot of light curves through data manipulation using the matplotlib library for statistical visualization. The final code downloads, interprets, and outputs plots for research and presentation purposes. </p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj python">
+                <div class="col-sm-6 col-md-4 proj python">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Discord Bot</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">Utilized python and the discord library to create an automated driver
-                                for
-                                three distinct games that would enable members of a discord server to initiate and play
-                                the
-                                game with others.</p>
-                            <a href="https://github.com/rynbhuiya/DiscordBotContest">View More</a>
+                            <a href="https://github.com/rynbhuiya/DiscordBotContest"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">Utilized python and the discord library to create an automated driver for three distinct games that would enable members of a discord server to initiate and play the game with others.</p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj python">
+                <div class="col-sm-6 col-md-4 proj python">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title"> Aggienova Colored Image gif </h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">Developed a program to automate the retrieval of supernovae fits files
-                                from
-                                an archive for the creation of a colored supernovae gif (short movie) that displays the
-                                supernovae in the image change over time while synced to the animation plot of the light
-                                curve over the same time.</p>
-                            <a
-                                href="https://github.com/pbrown801/aggienova-templates/blob/master/images/manipulate_nova_data.py">View
-                                More</a>
+                            <a href="https://github.com/pbrown801/aggienova-templates/blob/master/images/manipulate_nova_data.py"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">
+                                Developed a program to automate the retrieval of supernovae fits files from an archive for the creation of a colored supernovae gif 
+                                (short movie) that displays the supernovae in the image change over time while synced to the animation plot of the light curve over the same time.
+                            </p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj python">
+                <div class="col-sm-6 col-md-4 proj python">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Cache Simulator</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">This program simulates a cache with various replacement/hit policies
-                                and
-                                other functions in a high-level language, Python.</p>
-                            <a href="https://github.com/megamp15/Cache-Simulator">View More</a>
+                            <a href="https://github.com/megamp15/Cache-Simulator"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">This program simulates a cache with various replacement/hit policies and other functions in a high-level language, Python.</p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj python">
+                <div class="col-sm-6 col-md-4 proj python">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Aggienova Smoothing Script</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">Created a smoothing script for image files to improve image quality.
-                            </p>
-                            <a href="https://github.com/megamp15/Aggienova_Spring2019">View More</a>
+                            <a href="https://github.com/megamp15/Aggienova_Spring2019"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">Created a smoothing script for image files to improve image quality.</p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj python">
+                <div class="col-sm-6 col-md-4 proj python">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Pong - Final Project</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">Created a pong game using python practices learned in Engineering Lab
-                                1, Fall 2018. </p>
-                            <a href="https://github.com/megamp15/ENGR_102-Pong">View More</a>
+                            <a href="https://github.com/megamp15/ENGR_102-Pong"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">Created a pong game using python practices learned in Engineering Lab 1, Fall 2018. </p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 proj other">
+                <div class="col-sm-6 col-md-4 proj other">
                     <div class="card text-left">
                         <div class="card-body">
                             <h5 class="card-title">Groups Creator - Final Project</h5>
-                            <i class="link fa-lg fas fa-external-link-alt"></i>
-                            <p class="card-text">Creates pairs of students based on responses from a survey using Java
-                                learned in Programming Languages, Spring 2020. </p>
-                            <a href="https://github.com/megamp15/ENGR_102-Pong">View More</a>
+                            <a href="https://github.com/megamp15/ENGR_102-Pong"><i class="link fa-lg fas fa-external-link-alt"></i></a>
+                            <p class="card-text">Creates pairs of students based on responses from a survey using Java learned in Programming Languages, Spring 2020. </p>
                             <p class="card-languages">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
@@ -252,14 +220,14 @@
             <h1 class="col=12 contact-text text-center" id="contact">CONTACT</h1>
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-4 contact-info">
-                    <h3 class="my-email">Email: mahirpirmohammed@gmail.com</h3>
-                    <div class="icons">
-                        <a href="https://www.linkedin.com/in/mahir-p/" target="_blank"><i
-                                class="fab fa-linkedin fa-3x"></i></a>
-                        <a href="https://github.com/megamp15" target="_blank"><i
-                                class="fab fa-github-square fa-3x"></i></a>
-                    </div>
+                    <div class="col-md-4 contact-info">
+                        <h3 class="my-email">Email: mahirpirmohammed@gmail.com</h3>
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/in/mahir-p/" target="_blank"><i
+                                    class="fab fa-linkedin fa-3x"></i></a>
+                            <a href="https://github.com/megamp15" target="_blank"><i
+                                    class="fab fa-github-square fa-3x"></i></a>
+                        </div>
                 </div>
                 <div class="col-md-6 contact-form-info">
                     <form method="post"
@@ -298,7 +266,6 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="preloader.js"></script>
     <script src="script.js"></script>
 </body>
 
