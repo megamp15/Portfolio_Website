@@ -589,6 +589,15 @@ input[type=text]:focus, textarea:focus {
         font-size: 1.15rem;
     }
 
+    .contact-form{
+        font-size: 18px;
+        width: 75%;
+    }
+    
+    .contact-submit {
+        padding: 10px;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -667,7 +676,15 @@ input[type=text]:focus, textarea:focus {
         font-size: 1rem;
     }
 
-
+    .contact-form{
+        font-size: 17px;
+        width: 75%;
+    }
+    
+    .contact-submit {
+        padding: 10px;
+        font-size: 17px;
+    }
 
     /* Thank You Page */
 
@@ -762,7 +779,15 @@ input[type=text]:focus, textarea:focus {
         font-size: 1.1rem;
     }
 
-
+    .contact-form{
+        font-size: 14px;
+        width: 75%;
+    }
+    
+    .contact-submit {
+        padding: 10px;
+        font-size: 14px;
+    }
 
     /*Mobile-Thank You Page*/
     .thanks-container {
@@ -804,5 +829,16 @@ input[type=text]:focus, textarea:focus {
 
     .card p{
         font-size: 12px;
+    }
+
+    /* CONTACT */
+    .contact-form{
+        font-size: 11px;
+        width: 80%;
+    }
+    
+    .contact-submit {
+        padding: 10px;
+        font-size: 11px;
     }
 }
