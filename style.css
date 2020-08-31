@@ -40,7 +40,7 @@ html {
 /* Animated Background styles by Frank's Laboratory. See more in script.js */
 #canvas {
     position: absolute;
-    min-height: 107vh;
+    min-height: 108vh;
     top: 0; left: 0;
     width: 100%;
     background-color: #232931;
@@ -142,22 +142,19 @@ html {
     position: relative;
 }
 
-.about-text:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-
-.about-text:after {
-  left: 0.5em;
-  margin-right: -50%;
-}
-
 .about-languages {
     color: #dfdfdf;
 }
 
 .profile{
     margin: auto 0;
+}
+
+.about-content {
+    position: relative;
+    left: 300px;
+    top: 20px;
+    width: 70%;
 }
 
 .about-me-info {
@@ -198,29 +195,9 @@ html {
     color:#3b3f46;
     position: relative;
 }
-/* 
-.project-text:before,
-.project-text:after {
-  background-color: #4ecca3;
-  content: "";
-  display: inline-block;
-  height: 4px;
-  position: relative;
-  vertical-align: middle;
-  width: 500px;
-} */
-
-/* .project-text:before {
-  right: 0.5em;
-  margin-left: -50%;
-} */
-
-/* .project-text:after {
-  left: 0.5em;
-  margin-right: -50%;
-} */
 
 .card-holder{
+    width: 100%;
     margin: auto;
     width: 1280px;
 }
@@ -464,6 +441,11 @@ input[type=text]:focus, textarea:focus {
         font-size:.76rem;
     }
 
+    .about-content {
+        width: 100%;
+        left: 0px;
+    }
+
 }
 
 @media (max-width: 1110px) {
@@ -554,23 +536,9 @@ input[type=text]:focus, textarea:focus {
         width: 100%;
         height: auto;
     }
-    .project-text:before,
-    .project-text:after {
-        width: 0px;
-    }
-
-    .about-text:before,
-    .about-text:after {
-        width: 0px;
-    }
-
-    .contact-text:before,
-    .contact-text:after {
-        width: 0px;
-    }
 
     .card-holder{
-        margin-right: 600px;
+        width: 100%;
     }
 
     .card{
