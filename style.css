@@ -40,7 +40,7 @@ html {
 /* Animated Background styles by Frank's Laboratory. See more in script.js */
 #canvas {
     position: absolute;
-    min-height: 106vh;
+    min-height: 107vh;
     top: 0; left: 0;
     width: 100%;
     background-color: #232931;
@@ -49,7 +49,7 @@ html {
 
 .Home {
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     display: grid;
     place-items: center;
     text-align: center;
@@ -533,9 +533,6 @@ input[type=text]:focus, textarea:focus {
         font-size: 1.25rem;
     }
     
-
-
-
     /* Thank You Page */
 
     .thanks-container {
@@ -550,7 +547,13 @@ input[type=text]:focus, textarea:focus {
     }
 }
 
-@media (max-width: 850px){
+
+
+@media (max-width: 1000px){
+    .home-text{
+        width: 100%;
+        height: auto;
+    }
     .project-text:before,
     .project-text:after {
         width: 0px;
@@ -571,8 +574,8 @@ input[type=text]:focus, textarea:focus {
     }
 
     .card{
-        width: 225px;
-        height: 225px;
+        width: 235px;
+        height: 235px;
     }
 
     .card p{
@@ -587,7 +590,6 @@ input[type=text]:focus, textarea:focus {
     }
 
 }
-
 
 @media (max-width: 768px) {
 
@@ -604,14 +606,17 @@ input[type=text]:focus, textarea:focus {
         height: auto;
     }
 
+    .hello{
+        font-size:1rem;
+    }
 
     .name {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     .job{
         width: 100%;
-        font-size: 2rem
+        font-size: 1.5rem
     }
 
     /* ABOUT */
@@ -750,11 +755,11 @@ input[type=text]:focus, textarea:focus {
 
     /* CONTACT */
     .contact-text{
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
 
     .my-email{
-        font-size: 1.45rem;
+        font-size: 1.1rem;
     }
 
 
