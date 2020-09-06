@@ -155,11 +155,11 @@ setTimeout(() => {
   document.querySelector(".main").style.display = "block";
 }, 1);
 
-// // Sticky Navigation Bar
-// window.addEventListener("scroll", function () {
-//   let nav = document.querySelector("nav");
-//   nav.classList.toggle("sticky", window.scrollY > 800);
-// });
+// Sticky Navigation Bar
+window.addEventListener("scroll", function () {
+  let nav = document.querySelector("nav");
+  nav.classList.toggle("sticky", window.scrollY > 500);
+});
 
 $(".nav-link").on("click", function () {
   $(".navbar-collapse").collapse("hide");

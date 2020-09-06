@@ -40,8 +40,8 @@ html {
 /* Animated Background styles by Frank's Laboratory. See more in script.js */
 #canvas {
     position: absolute;
-    min-height: 107vh;
-    top: 0; left: 0;
+    min-height: 100vh;
+    top: 0px; left: 0;
     width: 100%;
     background-color: #232931;
     z-index: -1;
@@ -49,7 +49,7 @@ html {
 
 .Home {
     width: 100%;
-    min-height: 100vh;
+    min-height: 89vh;
     display: grid;
     place-items: center;
     text-align: center;
@@ -59,8 +59,8 @@ html {
     font-size: 3rem;
     color: #dfdfdf;
     height: 100%;
-    padding-left:0px;
-    padding-top: 300px;
+    padding-left:10px;
+    padding-top: 200px;
 }
 
 .home-text{
@@ -82,18 +82,6 @@ html {
     font-size: 3rem;
 }
 
-.down{
-    margin-top: 2rem;
-}
-
-.fa-chevron-down{
-    /* color: #dfdfdf !important; */
-    animation: fill 10s infinite;
-}
-
-.fa-chevron-down:hover {
-    color: #4ecca3 !important;
-}
 
 @keyframes fill{
     0%{color: #dfdfdf;}
@@ -129,7 +117,7 @@ html {
 }
 
 .about-column{
-    padding-top: 30px;
+    padding-top: 10px;
     margin: auto;
     width: 80%;
 }
@@ -185,6 +173,14 @@ html {
 }
 
 /* Portfolio Projects */
+
+.matrix{
+    margin: auto 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+}
+
 .project {
     background-color: #232931;
     min-height: 100vh;
@@ -198,37 +194,11 @@ html {
     color:#3b3f46;
     position: relative;
 }
-/* 
-.project-text:before,
-.project-text:after {
-  background-color: #4ecca3;
-  content: "";
-  display: inline-block;
-  height: 4px;
-  position: relative;
-  vertical-align: middle;
-  width: 500px;
-} */
-
-/* .project-text:before {
-  right: 0.5em;
-  margin-left: -50%;
-} */
-
-/* .project-text:after {
-  left: 0.5em;
-  margin-right: -50%;
-} */
-
-.card-holder{
-    margin: auto;
-    width: 1280px;
-}
 
 .card {
     margin: 10px auto;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 100%;
     background-color: #29313b;
 }
 
@@ -303,16 +273,12 @@ html {
     margin-right: -50%;
 }
 
-
 .my-email {
     font-size: 20px;
 }
 
 .contact-info{
     color: #4ecca3;
-    /* background-color: #252627; */
-    /* border: 3px solid #4ecca3; */
-    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,7 +307,7 @@ html {
     border: 3px solid #707070;
     color: #dfdfdf;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px;
     font-size: 20px;
     width: 70%;
@@ -353,7 +319,7 @@ html {
     color: #4ecca3;
     border-radius: 10px;
     margin: 10px 0;
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
 }
 
@@ -442,26 +408,17 @@ input[type=text]:focus, textarea:focus {
 /*  Media Queries */
 
 @media (max-width: 1290px){
-    
-    .card-holder{
-        width:800px;
-    }
-
-    .card {
-        width:250px;
-        height:250px;
-    }
 
     .card-title {
         width: 85%;
     }
 
     .card h5{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .card p{
-        font-size:.76rem;
+        font-size:.9rem;
     }
 
 }
@@ -504,24 +461,19 @@ input[type=text]:focus, textarea:focus {
     .card-holder{
         margin-right: 100px;
         width: 800px;
-    }
-
-    .card {
-        height: 250px;
-        width: 250px;
-    }   
+    } 
 
     .card-title {
         width: 85%;
     }
 
-    .card h5{
+    /* .card h5{
         font-size: 1.1rem;
     }
 
     .card p{
         font-size:.76rem;
-    }
+    } */
 
     /* CONTACT */
 
@@ -568,18 +520,13 @@ input[type=text]:focus, textarea:focus {
     .contact-text:after {
         width: 0px;
     }
-
-    .card-holder{
-        margin-right: 600px;
-    }
-
-    .card{
-        width: 235px;
-        height: 235px;
+ 
+    .card h5{
+        font-size: 1.3rem;
     }
 
     .card p{
-        font-size: 10px;
+        font-size:.8rem;
     }
 
     /* CONTACT */
@@ -600,11 +547,10 @@ input[type=text]:focus, textarea:focus {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
 
 
     /*HOME */
-
     .container-home{
         width:100%;
     }
@@ -643,7 +589,10 @@ input[type=text]:focus, textarea:focus {
     }
 
     /* PROJECTS */
-
+    .matrix{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+    }
     .project-text {
         font-size: 5rem;
     }
@@ -651,23 +600,18 @@ input[type=text]:focus, textarea:focus {
     .card-holder {
         width: 500px;
         margin-left: 100px;
-    }
-
-    .card {
-        height: 225px;
-        width: 225px;
-    }   
+    } 
 
     .card-title {
         width: 85%;
     }
 
     .card h5{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .card p{
-        font-size: 10px;
+        font-size:.9rem;
     }
 
     /* CONTACT */
@@ -742,32 +686,29 @@ input[type=text]:focus, textarea:focus {
     }
 
     /* PROJECTS */
-
+    .matrix{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
     .project-text {
         font-size: 3.5rem;
     }
-
-    .card-holder{
-        width: 100px;
-        position: relative;
-        right:35px;
-    }
-
-    .card {
-        height: 325px;
-        width: 325px;
-    }   
 
     .card-title {
         width: 85%;
     }
 
     .card h5{
-        font-size: 1rem;
+        font-size: 1.35rem;
     }
 
     .card p{
-        font-size: 14px;
+        font-size:.9rem;
+    }
+
+    .card{
+        height:350px;
+        width: 350px;
     }
 
     /* CONTACT */
@@ -814,22 +755,17 @@ input[type=text]:focus, textarea:focus {
         right: 67px;
     }
 
-    .card {
-        height: 250px;
-        width:  250px;
-    }   
-
     .card-title {
         width: 85%;
     }
 
-    .card h5{
+    /* .card h5{
         font-size: 1rem;
     }
 
     .card p{
         font-size: 12px;
-    }
+    } */
 
     /* CONTACT */
     .contact-form{
