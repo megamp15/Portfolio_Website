@@ -672,7 +672,7 @@ input[type=text]:focus, textarea:focus {
     /* ABOUT */
 
     .about-text{
-        margin-top: 10px;
+        margin-top: 50px;
         font-size:3.5rem ;
     }
 
