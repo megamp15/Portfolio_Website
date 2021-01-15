@@ -161,6 +161,9 @@ html {
     color: #4ecca3;
 }
 
+.two_col_list{
+    column-count:2;
+}
 .TAMU {
     color: #dfdfdf;
     text-decoration: none;
@@ -425,7 +428,7 @@ input[type=text]:focus, textarea:focus {
 
 @media (max-width: 1110px) {
     
-    /*HOME */
+    /* HOME */
 
     .home-text{
         width: 800px;
